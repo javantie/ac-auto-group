@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+#mainheader {
+  background-image: url("./assets/images/FB_IMG_1575093313783.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+
+}

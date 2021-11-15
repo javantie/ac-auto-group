@@ -8,7 +8,6 @@ function App() {
   return (
     <div id="container" className="">
      <Header />
-     <Hero />
     </div>
   );
 }
