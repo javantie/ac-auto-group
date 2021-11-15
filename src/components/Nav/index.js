@@ -1,68 +1,58 @@
 import React from "react";
+import srcfile from "../../assets/js/navigation"
 
 function Nav() {
   return (
     <>
-      <div id="navbar" className="">
-        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-          <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <svg
-              class="fill-current h-8 w-8 mr-2"
-              width="54"
-              height="54"
-              viewBox="0 0 54 54"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-            </svg>
-            <span class="font-semibold text-xl tracking-tight font-extrabold text-2xl mr-5">
-              AC Auto Group
-            </span>
-          </div>
-          <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-              <svg
-                class="fill-current h-3 w-3"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
-          </div>
-          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-              <a
-                href="#responsive-header"
-                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 font-bold text-white text-lg hover:bg-gray-400"
-              >
-                Home
-              </a>
-              <a
-                href="#responsive-header"
-                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 font-bold text-white text-lg"
-              >
-                Get A Quote
-              </a>
-              <a
-                href="#responsive-header"
-                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white font-bold text-white text-lg"
-              >
-                Contact Us
-              </a>
-            </div>
-            <div>
-              <a
-                href="#"
-                class=" font-bold text-white text-lg inline-block text-sm py-2 leading-none  rounded text-white  hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-              >
-                News Blog
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
+<div class="relative min-h-screen md:flex">
+
+{/* <!-- mobile menu bar --> */}
+<div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+  {/* <!-- logo --> */}
+  <a href="#" class="block p-4 text-white font-bold">AC AUTO BUYERS</a>
+
+  {/* <!-- mobile menu button --> */}
+  <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+</div>
+
+{/* <!-- sidebar --> */}
+<div class="sidebar bg-blue-800 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+
+  {/* <!-- logo --> */}
+  <a href="#" class="text-white flex items-center space-x-2 px-4">
+    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+    </svg>
+    <span class="text-2xl font-extrabold">AC AUTO BUYERS</span>
+  </a>
+
+  {/* <!-- nav --> */}
+  <nav>
+    <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+      Home
+    </a>
+    <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+      About
+    </a>
+    <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+      Features
+    </a>
+    <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
+      Pricing
+    </a>
+  </nav>
+</div>
+
+{/* <!-- content --> */}
+{/* <div class="flex-1 p-10 text-2xl font-bold">
+  content goes here
+</div> */}
+<script src={srcfile}></script>
+</div>
     </>
   );
 }
