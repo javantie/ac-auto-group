@@ -38,15 +38,15 @@ function About() {
       <p  className="text-lg">We’ll help you get any type of car off your hands, including:</p>
       <ul className="font-bold text-lg">
         {" "}
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Junk cars</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Bad transmission vehicles</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>SUVs</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Luxury vehicles</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Performance vehicles</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Damaged cars</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Used cars</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Used trucks</li>
-        <li><i class="fas fa-check pr-4 text-green-300"></i>Pick-Ups</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Junk cars</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Bad transmission vehicles</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>SUVs</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Luxury vehicles</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Performance vehicles</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Damaged cars</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Used cars</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Used trucks</li>
+        <li><i className="fas fa-check pr-4 text-green-300"></i>Pick-Ups</li>
       </ul>
       <p  className="text-lg">
         Regardless of what type of vehicle you’ve got to get rid of, we’re here

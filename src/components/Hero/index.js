@@ -1,8 +1,5 @@
 import React from "react";
-import imag1 from "../../assets/images/02.jpg";
-import img2 from "../../assets/images/images.jpg";
-import img3 from "../../assets/images/car2.png";
-import logo from "../../assets/images/FB_IMG_1575093313783.jpg";
+import bg_img1 from "../../assets/images/02.jpg";
 import Offer from "../OfferButton";
 import CallButton from "../CallButton";
 
@@ -11,7 +8,7 @@ function Hero() {
     <>
       <div className="hero-section p-2 rounded">
         <div className="hero-image p-1">
-          <img src={imag1} alt="hero" className="rounded" />
+          <img src={bg_img1} alt="hero" className="rounded" />
         </div>
         <div className="hero-content">
           <h1 className="font-mono text-center border-t mt-1 text-yellow-500 font-bold">

@@ -28,7 +28,7 @@ function ContactForm() {
     <div>
       <div className="border-t-2 mt-4">
         <p className="font-semibold  mt-2">
-          Please send us a message if you have any qustions or email us at
+        <i className="fas fa-envelope-open-text pr-2"></i>Please send us a message if you have any qustions or email us at
           test@gmail.com
         </p>
       </div>
@@ -100,7 +100,7 @@ function ContactForm() {
           type="submit"
           className="bg-blue-600 p-2 font-bold text-white font-serif mt-2 rounded-lg hover:bg-blue-300"
         >
-          Submit
+          <i className="fas fa-share pr-1"></i> Send
         </button>
       </form>
     </div>
