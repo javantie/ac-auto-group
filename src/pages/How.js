@@ -1,4 +1,6 @@
 import React from "react";
+import OfferButton from "../components/OfferButton";
+import CallButton from "../components/CallButton";
 
 function How() {
   return (
@@ -60,6 +62,10 @@ function How() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center sm:justify-evenly flex-col sm:flex-row">
+      <OfferButton />
+      <CallButton />
       </div>
     </div>
   );
