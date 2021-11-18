@@ -36,13 +36,13 @@ function Main() {
   {/* <!-- nav --> */}
   <nav className="font-bold font-serif text-xl">
     <a href="#" class="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white">
-      Get Offer
+      Get Offer <i class="far fa-money-bill-alt pl-5 text-2xl"></i>
     </a>
     <a href="" class="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400 hover:text-white">
-      About
+      About 
     </a>
     <a href="" class="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400 hover:text-white">
-      How It Works
+      How It Works 
     </a>
     <a href="" class="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400 hover:text-white">
       Contact Us
