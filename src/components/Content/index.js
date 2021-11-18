@@ -4,6 +4,8 @@ import How from "../../pages/How";
 import About from "../../pages/About";
 import ContactForm from "../ContactForm";
 import LeadForm from "../LeadForm";
+import Testimonials from "../Testimonials";
+
 
 function Content() {
   return (
@@ -13,6 +15,7 @@ function Content() {
       <How />
       <About />
       <ContactForm />
+      <Testimonials />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Content from "../Content";
 import Banner from "../Banner";
+import Footer from "../Footer";
 
 function Main() {
   const handleClick = () => {
@@ -85,6 +86,7 @@ function Main() {
           <Content />
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
