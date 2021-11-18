@@ -1,5 +1,6 @@
 import React from "react";
 import Content from "../Content";
+import Banner from "../Banner";
 
 function Main() {
   const handleClick = () => {
@@ -11,6 +12,7 @@ function Main() {
 
   return (
     <>
+    <Banner/>
       <div className=" md:flex">
         {/* <!-- mobile menu bar --> */}
         <div className="bg-green-700 text-gray-100 flex justify-between md:hidden">

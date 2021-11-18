@@ -5,7 +5,7 @@ import CallButton from "../components/CallButton";
 function How() {
   return (
     <div>
-      <div className=" border-t-2 border-b-2">
+      <div className=" border-b-2">
         <h1 className="text-center font-bold text-green-600">
           Sell Your Car for Cash with AC Auto Buyers Cash for Cars{" "}
         </h1>
