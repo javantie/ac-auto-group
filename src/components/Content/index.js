@@ -1,15 +1,20 @@
-import React from 'react'
-import Hero from "../Hero"
-import How from "../../pages/How"
-
+import React from "react";
+import Hero from "../Hero";
+import How from "../../pages/How";
+import About from "../../pages/About";
+import ContactForm from "../ContactForm";
+import LeadForm from "../LeadForm";
 
 function Content() {
   return (
     <div className="">
-      <Hero/>
-      <How/>
+      <Hero />
+      <LeadForm />
+      <How />
+      <About />
+      <ContactForm />
     </div>
-  )
+  );
 }
 
-export default Content
+export default Content;

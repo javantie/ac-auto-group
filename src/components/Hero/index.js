@@ -21,7 +21,7 @@ function Hero() {
             Don’t just let it sit there! Our junkyard will pick up your vehicle
             anywhere within the greater New York area – FREE!{" "}
           </p>
-          <div className="md:justify-evenly flex flex-col sm:flex-row">
+          <div className="sm:justify-evenly flex flex-col sm:flex-row">
             <Offer />
             <CallButton />
            
