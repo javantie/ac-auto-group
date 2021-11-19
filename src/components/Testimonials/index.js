@@ -32,7 +32,7 @@ function Testimonials() {
             </div>
             <div className="">
               <p className="font-serif text-md p-1"> "{testiment.text}"</p>
-              <p className="font-bold font-mono"><i class="fas fa-user-check pr-4"></i>{testiment.name}</p>
+              <p className="font-bold font-mono"><i className="fas fa-user-check pr-4"></i>{testiment.name}</p>
             </div>
           </div>
         ))}

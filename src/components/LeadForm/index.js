@@ -4,7 +4,7 @@ function LeadForm() {
     <div className="my-4 p-2 rounded-lg shadow-lg leadform ">
       <div>
         <p className="font-bold text-center mt-8 text-2xl font-serif text-yellow-500 animate-pulse">
-          Fill out the form below to get a free quote.
+          Fill out the form below to get a free instant quote.
         </p>
       </div>
       <div className="flex justify-center">

@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import emailjs from "emailjs-com";
+import apikey from "../../apikey";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -7,10 +9,27 @@ function ContactForm() {
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message, phone);
+    const service_id = apikey.SERVICE_ID;
+    const user_id = apikey.USER_ID;
+    const contact_form_template = apikey.CONTACT_FORM_TEMPLATE;
+    emailjs
+      .sendForm(service_id, contact_form_template, e.target, user_id)
+      .then((results) => {
+        console.log(results);
+        alert("Thank you for your message! We will get back to you soon");
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Something went wrong, please try again later");
+      });
+
+    const messageData = { name, email, message, phone };
+    console.log(messageData);
   };
+
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
@@ -28,12 +47,12 @@ function ContactForm() {
     <div>
       <div className="border-t-2 mt-4">
         <p className="font-semibold  mt-2">
-        <i className="fas fa-envelope-open-text pr-2"></i>Please send us a message if you have any qustions or email us at
-          test@gmail.com
+          <i className="fas fa-envelope-open-text pr-2"></i>Please send us a
+          message if you have any qustions or email us at test@gmail.com
         </p>
       </div>
       <form
-        action="https://formspree.io/xqgqgwjq"
+        // action="https://formspree.io/xqgqgwjq"
         method="POST"
         onSubmit={handleSubmit}
       >
