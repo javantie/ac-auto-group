@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import apikey from "../../keys/apikey";
+// import apikey from "../../keys/apikey";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -12,9 +12,9 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const service_id = apikey.SERVICE_ID;
-    const user_id = apikey.USER_ID;
-    const contact_form_template = apikey.CONTACT_FORM_TEMPLATE;
+    const service_id = "service_tvsmfye";
+    const user_id = "user_2DCiRQIylnJKjcFFvztNv";
+    const contact_form_template = "template_2hrx594";
     emailjs
       .sendForm(service_id, contact_form_template, e.target, user_id)
       .then((results) => {

@@ -6,11 +6,13 @@ const testimony = [
     image: img_test,
     text: "Very smooth transaction. I would use them again! They called me about five minutes after I submitted the request to have my car picked up, and they took care of everything. They gave me what they offered online in cash. Perfect, thank you.",
     name: "Kelly Wrignt",
+    id: 1,
   },
   {
     image: img_test,
     text: "Thanks for the reminder lol. Our experience was relieving to say the least and the gentlemen that came and retrieved the vehicle were very nice and prompt. Thank you for doing business with us!",
     name: "Micheal Spindel",
+    id: 2,
   },
 ];
 
@@ -22,7 +24,7 @@ function Testimonials() {
       </h2>
       <div className="flex flex-col sm:flex-row sm: justify-evenly">
         {testimony.map((testiment) => (
-          <div className=" border sm:w-2/5 rounded-lg p-2 text-center shadow-lg mt-2">
+          <div key={testiment.id} className=" border sm:w-2/5 rounded-lg p-2 text-center shadow-lg mt-2">
             <div className="flex justify-center border rounded-lg">
               <img
                 src={testiment.image}
