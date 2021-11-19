@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import apikey from "../../apikey";
+import apikey from "../../keys/apikey";
 import { useState } from "react";
 
 function LeadForm() {
