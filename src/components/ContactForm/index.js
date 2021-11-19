@@ -48,7 +48,7 @@ function ContactForm() {
       <div className="border-t-2 mt-4">
         <p className="font-semibold  mt-2">
           <i className="fas fa-envelope-open-text pr-2"></i>Please send us a
-          message if you have any qustions or email us at test@gmail.com
+          message if you have any qustions or email us at gary@acutobuyers.com
         </p>
       </div>
       <form

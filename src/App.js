@@ -10,6 +10,7 @@ import ContactForm from "./components/ContactForm";
 import LeadForm from "./components/LeadForm";
 import Testimonials from "./components/Testimonials";
 import ContactPage from "./pages/Contact";
+import Home from "./pages/Home";
 
 function App() {
   const handleClick = () => {
@@ -95,7 +96,7 @@ function App() {
             <Testimonials />
             <ContactForm /> */}
             {/* <ContactPage /> */}
-            <About />
+            <Home />
 
           </div>
         </div>
