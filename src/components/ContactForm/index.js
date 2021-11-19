@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import apikey from "../../keys/apikey";
+// import apikey from "../../keys/apikey";
 
 function ContactForm() {
   const [name, setName] = useState("");
