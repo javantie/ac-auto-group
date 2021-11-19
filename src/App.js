@@ -94,7 +94,9 @@ function App() {
             <About />
             <Testimonials />
             <ContactForm /> */}
-            <ContactPage />
+            {/* <ContactPage /> */}
+            <About />
+
           </div>
         </div>
         <Footer />
