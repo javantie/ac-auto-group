@@ -20,7 +20,7 @@ function Testimonials() {
       <h2 className="text-center font-bold font-serif text-green-600 border-t-2 pt-2 ">
         Testimonials
       </h2>
-      <div className="flex flex-col">
+      <div className="flex flex-col sm:flex-row sm: justify-evenly">
         {testimony.map((testiment) => (
           <div className=" border sm:w-2/5 rounded-lg p-2 text-center shadow-lg mt-2">
             <div className="flex justify-center border rounded-lg">
@@ -32,7 +32,7 @@ function Testimonials() {
             </div>
             <div className="">
               <p className="font-serif text-md p-1"> "{testiment.text}"</p>
-              <p className="font-bold font-mono"><i class="fas fa-user-check pr-4"></i>{testiment.name}</p>
+              <p className="font-bold font-mono"><i className="fas fa-user-check pr-4"></i>{testiment.name}</p>
             </div>
           </div>
         ))}

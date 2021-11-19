@@ -14,8 +14,9 @@ function Content() {
       <LeadForm />
       <How />
       <About />
-      <ContactForm />
       <Testimonials />
+      <ContactForm />
+   
     </div>
   );
 }
