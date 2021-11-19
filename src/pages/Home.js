@@ -18,11 +18,11 @@ function Home() {
           {" "}
           Program Gets Your Car Sold FAST!
         </p>
-        <div className=" flex justify-evenly animate-bounce text-red-500 text-3xl">
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
+        <div className=" flex justify-evenly animate-bounce text-green-500 text-3xl">
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
         </div>
         <div className="flex justify-center pb-2">
           <OfferButton />
