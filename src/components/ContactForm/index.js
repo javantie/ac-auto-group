@@ -9,7 +9,6 @@ function ContactForm() {
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const service_id = "service_tvsmfye";
@@ -114,13 +113,14 @@ function ContactForm() {
             required
           ></textarea>
         </div>
-
-        <button
-          type="submit"
-          className="bg-blue-600 p-2 font-bold text-white font-serif mt-2 rounded-lg hover:bg-blue-300"
-        >
-          <i className="fas fa-share pr-1"></i> Send
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="bg-blue-600 p-2 text-3xl font-bold text-white font-serif my-2 rounded-lg hover:bg-blue-300 w-3/6"
+          >
+            <i className="fas fa-share pr-1"></i> Send
+          </button>
+        </div>
       </form>
     </div>
   );

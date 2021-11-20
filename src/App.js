@@ -29,14 +29,13 @@ function App() {
             {/* <!-- mobile menu bar --> */}
             <div className="bg-green-700 text-gray-100 flex justify-between md:hidden">
               {/* <!-- logo --> */}
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="block p-4 text-yellow-300 font-bold text-2xl font-serif no-underline"
               >
                 AC AUTO BUYERS{" "}
                 <i className="fas fa-recycle text-3xl pl-1 text-white animate-spin"></i>
-              </a>
-
+              </Link>
               {/* <!-- mobile menu button --> */}
               <button
                 id="mobile-menu"
@@ -64,45 +63,45 @@ function App() {
               <nav className="font-bold font-serif text-xl">
                 <Link
                   to="/"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400 "
                 >
                   Get Offer{" "}
                   <i className="far fa-money-bill-alt pl-5 text-2xl"></i>
                 </Link>
                 <Link
                   to="/about-us"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400"
                 >
                   About
                 </Link>
 
                 <Link
                   to="/contact"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400"
                 >
                   Contact
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400"
                 >
                   How it works
                 </Link>
                 {/* <a
                   href=""
-                  className="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400"
                 >
                   About
                 </a> */}
                 {/* <a
                   href=""
-                  className="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400"
                 >
                   How It Works
                 </a>
                 <a
                   href=""
-                  className="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400 hover:text-white"
+                  className="no-underline block py-2.5 px-4 text-white rounded transition duration-200 hover:bg-blue-400"
                 >
                   Contact Us
                 </a> */}

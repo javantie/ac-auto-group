@@ -14,7 +14,7 @@ function ContactPage() {
       <h1 className="font-serif font-bold border-b-2 text-center bg-green-600 text-white p-1 rounded">
         <i className="fas fa-headset mr-4"></i>Contact Us{" "}
       </h1>
-      <p className="text-lg rounded-lg p-2.5 shadow">
+      <p className="text-lg rounded-lg p-2.5 shadow xl:text-center">
         We would love to hear from you. Please fill out the form below and we
         will get back to you as soon as possible.
       </p>
