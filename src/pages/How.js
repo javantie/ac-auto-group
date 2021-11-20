@@ -1,10 +1,9 @@
 import React from "react";
-import OfferButton from "../components/OfferButton";
 import CallButton from "../components/CallButton";
 import Hero from "../components/Hero";
 
 const faqs = [
-  { 
+  {
     id: 1,
     title: "What types of vehicles do you purchase?",
     text: "We buy cars, trucks, vans and SUVs in any condition, year, make, and model. We’ll buy your vehicle even if it’s NOT junk! Depending on your location, we might be able to purchase larger vehicles like RVs, school buses, and work trucks. Please call us for more details",
@@ -54,94 +53,94 @@ const faqs = [
 function How() {
   return (
     <>
-    <Hero/>
-    <div>
-      <div className=" border-2 mb-2 rounded-md shadow animate-pulse">
-        <h1 className="text-center font-bold text-green-600">
-          Sell Your Car for Cash with AC Auto Buyers Cash for Cars{" "}
-        </h1>
-        <p className="text-center text-2xl text-yellow-500 font-bold">
-          {" "}
-          Program Gets Your Car Sold FAST!
-        </p>
-      </div>
-      <div className="shadow-sm">
-        <h1 className="pt-2 text-white text-center rounded font-bold bg-green-600">
-          It's so simple - here's how it works! <br />
-          {/* <i class="fas fa-angle-double-down pl-4 animate-bounce"></i><i class="fas fa-angle-double-down pl-2 animate-bounce"></i><i class="fas fa-angle-double-down pl-2 animate-bounce"></i>
-           <i class="fas fa-angle-double-down pl-2 animate-bounce"></i> */}
-        </h1>
-        <div className=" flex  rounded-lg shadow mt-4">
-          <div className="font-bold text-lg w-3/12 items-center flex  pl-1 flex justify-center">
-            <p className="border bg-green-600 p-3 rounded-circle text-2xl text-white">
-              #1
-            </p>
-          </div>
-          <div className="w-8/12">
-            <p className=" border-l-2 border-green-200 pl-2 mt-1 font-semibold">
-              Provide us some details on your vehicle. You can do this by
-              calling  <a href="tel:+15183140703">1-(518) 314-0703</a>  or by filling out our online form. (hint:
-              using your VIN often results in a higher offer)
-            </p>
-          </div>
-        </div>
-        <div className=" flex  rounded-lg shadow mt-4">
-          <div className="font-bold text-lg w-3/12 items-center flex  pl-1 flex justify-center">
-            <p className="border bg-green-600 p-3 rounded-circle text-2xl text-white">
-              #2
-            </p>
-          </div>
-          <div className="w-8/12">
-            <p className=" border-l-2 border-green-200  pl-2 mt-1 font-semibold">
-              Decide whether or not to accept or decline the offer. If you like
-              our offer amount, enter in a few additional details (like the
-              vehicle color) to finalize the acceptance.
-            </p>
-          </div>
-        </div>
-        <div className=" flex  rounded-lg shadow mt-4">
-          <div className="font-bold text-lg w-3/12 items-center flex  pl-1 flex justify-center">
-            <p className="border bg-green-600 p-3 rounded-circle text-2xl text-white">
-              #3
-            </p>
-          </div>
-          <div className="w-8/12">
-            <p className=" border-l-2 border-green-200 pl-2 mt-1 font-semibold">
-              We'll schedule a time to come to you to pick up the vehicle (which
-              we tow away for FREE) and pay you cash (or check) on the spot.
-              That's it!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-center sm:justify-evenly flex-col sm:flex-row">
-        <CallButton />
-      </div>
-      <div className="font-serif">
-        <h1 className="mt-4 text-center font-bold text-yellow-500">
-          FAQs: What You Need To Know About Junk Car Selling
-        </h1>
-        <p className=" text-lg">
-          It pays to do your research first before you sell your car for cash.
-          Cash Auto Salvage answers the most common questions associated with
-          selling a car, junk car buying, and auto salvage yards
-        </p>
-        {faqs.map((faq) => (
-        <div key={faq.id} className="border p-2 rounded-md shadow my-2 text-center">
-          <h3 className="text-green-600"><i className="fas fa-info-circle mr-2 text-yellow-400 text-3xl"></i>{faq.title}</h3>
-          <p className="text-left">
-            {faq.text}
+      <Hero />
+      <div>
+        <div className=" border-2 mb-2 rounded-md shadow animate-pulse">
+          <h1 className="text-center font-bold text-green-600">
+            Sell Your Car for Cash with AC Auto Buyers Cash for Cars{" "}
+          </h1>
+          <p className="text-center text-2xl text-yellow-500 font-bold">
+            {" "}
+            Program Gets Your Car Sold FAST!
           </p>
         </div>
-        ))}
+        <div className="shadow-sm">
+          <h1 className="pt-2 text-white text-center rounded font-bold bg-green-600">
+            It's so simple - here's how it works! <br />
+          </h1>
+          <div className=" flex  rounded-lg shadow mt-4">
+            <div className="font-bold text-lg w-3/12 items-center flex  pl-1 flex justify-center">
+              <p className="border bg-green-600 p-3 rounded-circle text-2xl text-white">
+                #1
+              </p>
+            </div>
+            <div className="w-8/12">
+              <p className=" border-l-2 border-green-200 pl-2 mt-1 font-semibold">
+                Provide us some details on your vehicle. You can do this by
+                calling <a href="tel:+15183140703">1-(518) 314-0703</a> or by
+                filling out our online form. (hint: using your VIN often results
+                in a higher offer)
+              </p>
+            </div>
+          </div>
+          <div className=" flex  rounded-lg shadow mt-4">
+            <div className="font-bold text-lg w-3/12 items-center flex  pl-1 flex justify-center">
+              <p className="border bg-green-600 p-3 rounded-circle text-2xl text-white">
+                #2
+              </p>
+            </div>
+            <div className="w-8/12">
+              <p className=" border-l-2 border-green-200  pl-2 mt-1 font-semibold">
+                Decide whether or not to accept or decline the offer. If you
+                like our offer amount, enter in a few additional details (like
+                the vehicle color) to finalize the acceptance.
+              </p>
+            </div>
+          </div>
+          <div className=" flex  rounded-lg shadow mt-4">
+            <div className="font-bold text-lg w-3/12 items-center flex  pl-1 flex justify-center">
+              <p className="border bg-green-600 p-3 rounded-circle text-2xl text-white">
+                #3
+              </p>
+            </div>
+            <div className="w-8/12">
+              <p className=" border-l-2 border-green-200 pl-2 mt-1 font-semibold">
+                We'll schedule a time to come to you to pick up the vehicle
+                (which we tow away for FREE) and pay you cash (or check) on the
+                spot. That's it!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center sm:justify-evenly flex-col sm:flex-row">
+          <CallButton />
+        </div>
+        <div className="font-serif">
+          <h1 className="mt-4 text-center font-bold text-yellow-500">
+            FAQs: What You Need To Know About Junk Car Selling
+          </h1>
+          <p className=" text-lg">
+            It pays to do your research first before you sell your car for cash.
+            Cash Auto Salvage answers the most common questions associated with
+            selling a car, junk car buying, and auto salvage yards
+          </p>
+          {faqs.map((faq) => (
+            <div
+              key={faq.id}
+              className="border p-2 rounded-md shadow my-2 text-center"
+            >
+              <h3 className="text-green-600">
+                <i className="fas fa-info-circle mr-2 text-yellow-400 text-3xl"></i>
+                {faq.title}
+              </h3>
+              <p className="text-left">{faq.text}</p>
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-center">
+          <CallButton />
+        </div>
       </div>
-      <div className="flex justify-center">
-        <CallButton />
-      </div>
-
-    </div>
-
- 
     </>
   );
 }

@@ -25,13 +25,13 @@ function ContactPage() {
       <div className="">
           <h2 className="font-serif mt-4 text-center font-bold">Want An Instant Offer Online? </h2>
           <div className=" text-center flex justify-between px-20 sm:px-48 animate-bounce text-green-600">
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
-          <i class="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
           </div>
           <div className="flex justify-center">
             <OfferButton />

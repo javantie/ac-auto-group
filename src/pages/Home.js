@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import LeadForm from "../components/LeadForm";
 import Testimonials from "../components/Testimonials";
 import OfferButton from "../components/OfferButton";
-import CallButton from "../components/CallButton";
 
 function Home() {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import CallButton from "../components/CallButton";
 import OfferButton from "../components/OfferButton";
-import bg_img1 from "../assets/images/02.jpg";
 import bg_img2 from "../assets/images/selling-a-car-in-illinois.jpg";
 
 function About() {
@@ -29,27 +28,27 @@ function About() {
         <h2 className="text-yellow-600 font-bold pt-2">Why Choose Us?</h2>
         <ul>
           <li>
-            <i class="fas fa-chevron-circle-right pr-2"></i>We offer Guaranteed
+            <i className="fas fa-chevron-circle-right pr-2"></i>We offer Guaranteed
             Pricing & Free Towing
           </li>
           <li>
-            <i class="fas fa-chevron-circle-right pr-2"></i>Great Customer
+            <i className="fas fa-chevron-circle-right pr-2"></i>Great Customer
             Satisfaction with Honesty!
           </li>
           <li>
-            <i class="fas fa-chevron-circle-right pr-2"></i>We partner with only
+            <i className="fas fa-chevron-circle-right pr-2"></i>We partner with only
             license and bonded carriers
           </li>
           <li>
-            <i class="fas fa-chevron-circle-right pr-2"></i>Wel get you the best
+            <i className="fas fa-chevron-circle-right pr-2"></i>Wel get you the best
             price for your vehicle
           </li>
           <li>
-            <i class="fas fa-chevron-circle-right pr-2"></i>24 Hour Customer
+            <i className="fas fa-chevron-circle-right pr-2"></i>24 Hour Customer
             Service
           </li>
           <li>
-            <i class="fas fa-chevron-circle-right pr-2"></i>Service all 50
+            <i className="fas fa-chevron-circle-right pr-2"></i>Service all 50
             States
           </li>
         </ul>
