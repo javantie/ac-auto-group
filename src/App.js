@@ -2,14 +2,9 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Banner from "./components/Banner";
-// import Main from "./components/Main";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import How from "./pages/How";
 import About from "./pages/About";
-import ContactForm from "./components/ContactForm";
-import LeadForm from "./components/LeadForm";
-import Testimonials from "./components/Testimonials";
 import ContactPage from "./pages/Contact";
 import Home from "./pages/Home";
 import img_log from "./assets/images/FB_IMG_1575093313783.jpg";
@@ -56,7 +51,7 @@ function App() {
                 <img
                   src={img_log}
                   alt="cash-for-junk-car-ac-auto-buyers"
-                  className=" rounded-circle h-32 w-32 border-2 border-yellow-400 p-0.5"
+                  className=" rounded-circle h-32 w-32 border-2 border-yellow-400 "
                 />
               </div>
 
