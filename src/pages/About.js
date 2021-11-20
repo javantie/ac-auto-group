@@ -134,8 +134,9 @@ function About() {
         <p className="text-lg">
           Regardless of what type of vehicle you’ve got to get rid of, we’re
           here to help throughout every step of the process. If you’re unsure
-          whether we’ll take your car, give us a call at 1-888-888-8888 and we
-          can help answer any questions.
+          whether we’ll take your car, give us a call at{" "}
+          <a href="tel:+15183140703">(518) 314-0703</a> and we can help answer
+          any questions.
         </p>
         <div className="flex sm:justify-evenly flex-col sm:flex-row">
           <CallButton />

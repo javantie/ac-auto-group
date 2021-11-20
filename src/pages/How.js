@@ -80,7 +80,7 @@ function How() {
           <div className="w-8/12">
             <p className=" border-l-2 border-green-200 pl-2 mt-1 font-semibold">
               Provide us some details on your vehicle. You can do this by
-              calling 1-(518) 314-0703 or by filling out our online form. (hint:
+              calling  <a href="tel:+15183140703">1-(518) 314-0703</a>  or by filling out our online form. (hint:
               using your VIN often results in a higher offer)
             </p>
           </div>
