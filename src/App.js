@@ -28,7 +28,7 @@ function App() {
               {/* <!-- logo --> */}
               <Link
                 to="/"
-                className="block p-4 text-yellow-300 font-bold text-2xl font-serif no-underline"
+                className="block p-4 text-yellow-300 font-bold text-xl sm:text-2xl font-serif no-underline"
               >
                 AC AUTO BUYERS{" "}
                 <i className="fas fa-recycle text-3xl pl-1 text-white animate-spin"></i>
