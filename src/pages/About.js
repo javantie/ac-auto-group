@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <div className="mt-4 font-serif text-lg">
-        <div className="mb-2 xl:flex xl:justify-center">
+        <div className="mb-2 xl:flex xl:justify-center shadow">
           <img src={bg_img2} alt="bg_img1" className="shadow rounded-md" />
         </div>
         <h1 className="text-yellow-600 font-bold pt-2">What We Buy?</h1>

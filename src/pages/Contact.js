@@ -9,7 +9,7 @@ function ContactPage() {
   return (
     <div>
         <div className="flex justify-center border-b-2 mb-2">
-            <img src={bg_img1} alt="cash-for-junk-car-ac-auto-buyers" className="h-60 w-60" />
+            <img src={bg_img1} alt="cash-for-junk-car-ac-auto-buyers" className="h-48 w-48" />
         </div>
       <h1 className="font-serif font-bold border-b-2 text-center bg-green-600 text-white p-1 rounded">
         <i className="fas fa-headset mr-4"></i>Contact Us{" "}
