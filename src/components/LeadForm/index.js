@@ -1,70 +1,66 @@
 import React from "react";
 import emailjs from "emailjs-com";
-// import apikey from "../../keys/apikey";
+import apikey from "../../keys/apikey";
 import { useState } from "react";
 
 function LeadForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [year, setYear] = useState("");
-  const [make, setMake] = useState("");
-  const [model, setModel] = useState("");
-  const [zipcode, setZipcode] = useState("");
-  const [mileage, setMileage] = useState("");
-  const [title, setTitle] = useState("");
-  const [mechanical, setMechanical] = useState("");
-  const [state, setState] = useState("");
+  //set the state of the form
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    year: "",
+    make: "",
+    model: "",
+    zipcode: "",
+    title: "",
+    mechanical: "",
+    mileage: "",
+    state: "",
+  });
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const handlePhoneChange = (e) => {
-    setPhone(e.target.value);
-  };
-  const handleYearChange = (e) => {
-    setYear(e.target.value);
-  };
-  const handleMakeChange = (e) => {
-    setMake(e.target.value);
-  };
-  const handleModelChange = (e) => {
-    setModel(e.target.value);
-  };
-  const handleZipcodeChange = (e) => {
-    setZipcode(e.target.value);
-  };
-  const handleMileageChange = (e) => {
-    setMileage(e.target.value);
-  };
-  const handleTitleChange = (e) => {
-    setTitle(e.target.value);
-  };
-  const handleMechanicalChange = (e) => {
-    setMechanical(e.target.value);
-  };
-  const handleStateChange = (e) => {
-    setState(e.target.value);
+  //write a function to handle the state change of the form
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
+  //handle form sunmission for the lead form
   const handleSubmit = (e) => {
     e.preventDefault();
-    const service_id ="service_tvsmfye"
-    const user_id = "user_2DCiRQIylnJKjcFFvztNv";
-    const lead_form_template = "template_fm222p9";
     emailjs
-      .sendForm(service_id, lead_form_template, e.target, user_id)
-      .then((results) => {
-        console.log(results);
-        alert("Thank you for your message! We will get back to you soon");
-      })
-      .catch((err) => {
-        console.log(err);
-        alert("Something went wrong, please try again later");
-      });
+      .sendForm(
+        apikey.SERVICE_ID,
+        apikey.LEAD_FORM_TEMPLATE,
+        e.target,
+        apikey.USER_ID
+      )
+      .then(
+        (result) => {
+          alert("Thank you for your submission! We will contact you shortly");
+        },
+        (error) => {
+          alert("There was an error submitting your form. Please Try Again");
+          console.log(error.text);
+        }
+      );
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      year: "",
+      make: "",
+      model: "",
+      zipcode: "",
+      title: "",
+      mechanical: "",
+      mileage: "",
+      state: "",
+    });
   };
 
   return (
@@ -75,12 +71,7 @@ function LeadForm() {
         </p>
       </div>
       <div className="flex justify-center">
-        <form
-          action="https://formspree.io/xqgqgwjq"
-          method="POST"
-          onSubmit={handleSubmit}
-          className=" w-5/6"
-        >
+        <form method="POST" onSubmit={handleSubmit} className=" w-5/6">
           <div className="form-group">
             <label htmlFor="name" className="font-bold font-serif text-lg">
               Name
@@ -91,9 +82,9 @@ function LeadForm() {
               id="name"
               name="name"
               placeholder="Enter your name"
-              onChange={handleNameChange}
+              onChange={handleChange}
               required
-              value={name}
+              value={formData.name}
             />
           </div>
           <div className="form-group">
@@ -105,10 +96,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="email"
               name="email"
-              onChange={handleEmailChange}
+              onChange={handleChange}
               placeholder="Enter your email"
               required
-              value={email}
+              value={formData.email}
             />
           </div>
           <div className="form-group">
@@ -120,10 +111,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="phone"
               name="phone"
-              onChange={handlePhoneChange}
+              onChange={handleChange}
               placeholder="Enter your phone"
               required
-              value={phone}
+              value={formData.hone}
             />
           </div>
           <div className="form-group">
@@ -135,10 +126,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="year"
               name="year"
-              onChange={handleYearChange}
+              onChange={handleChange}
               placeholder="Enter vehicle year"
               required
-              value={year}
+              value={formData.year}
             />
           </div>
           <div className="form-group">
@@ -150,10 +141,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="make"
               name="make"
-              onChange={handleMakeChange}
+              onChange={handleChange}
               placeholder="Enter vehicle make"
               required
-              value={make}
+              value={formData.make}
             />
           </div>
           <div className="form-group ">
@@ -165,10 +156,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="model"
               name="model"
-              onChange={handleModelChange}
+              onChange={handleChange}
               placeholder="Enter vehicle model"
               required
-              value={model}
+              value={formData.model}
             />
           </div>
           <div className="form-group">
@@ -180,10 +171,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="mileage"
               name="mileage"
-              onChange={handleMileageChange}
+              onChange={handleChange}
               placeholder="Enter vehicle mileage"
               required
-              value={mileage}
+              value={formData.mileage}
             />
           </div>
           <div className="form-group">
@@ -195,10 +186,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="zipcode"
               name="zipcode"
-              onChange={handleZipcodeChange}
+              onChange={handleChange}
               placeholder="Enter vehicle zipcode"
               required
-              value={zipcode}
+              value={formData.zipcode}
             />
           </div>
           <div className="form-group">
@@ -210,10 +201,10 @@ function LeadForm() {
               className="form-control md:opacity-80"
               id="state"
               name="state"
-              onChange={handleStateChange}
+              onChange={handleChange}
               placeholder="Enter vehicle state"
               required
-              value={state}
+              value={formData.state}
             />
           </div>
           <div className="form-group">
@@ -222,8 +213,8 @@ function LeadForm() {
             </label>
             <select
               name="title"
-              value={title}
-              onChange={handleTitleChange}
+              value={formData.title}
+              onChange={handleChange}
               className=" border  my-2  font-serif ml-2 rounded"
               required
             >
@@ -244,8 +235,8 @@ function LeadForm() {
             </label>
             <select
               name="mechanical"
-              value={mechanical}
-              onChange={handleMechanicalChange}
+              value={formData.mechanical}
+              onChange={handleChange}
               className=" border  my-2  font-serif ml-2 rounded text-center"
             >
               <option value="">Select One</option>
