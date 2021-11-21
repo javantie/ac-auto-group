@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import apikey from "../../keys/apikey";
+// import apikey from "../../keys/apikey";
 import { useState } from "react";
 
 function LeadForm() {
@@ -33,10 +33,10 @@ function LeadForm() {
     e.preventDefault();
     emailjs
       .sendForm(
-        apikey.SERVICE_ID,
-        apikey.LEAD_FORM_TEMPLATE,
+        "service_tvsmfye",
+        "template_fm222p9",
         e.target,
-        apikey.USER_ID
+        "user_2DCiRQIylnJKjcFFvztNv"
       )
       .then(
         (result) => {

@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import apikey from "../../keys/apikey";
-require("dotenv").config();
+// import apikey from "../../keys/apikey";
 
 
 function ContactForm() {
@@ -25,10 +24,10 @@ function ContactForm() {
     e.preventDefault();
     emailjs
       .sendForm(
-        apikey.SERVICE_ID,
-        apikey.CONTACT_FORM_TEMPLATE,
+        "service_tvsmfye",
+        "template_2hrx594",
         e.target,
-        apikey.USER_ID
+        "user_2DCiRQIylnJKjcFFvztNv"
       )
       .then((results) => {
         console.log(results);
@@ -53,7 +52,6 @@ function ContactForm() {
         </p>
       </div>
       <form
-        // action="https://formspree.io/xqgqgwjq"
         method="POST"
         onSubmit={handleSubmit}
       >
