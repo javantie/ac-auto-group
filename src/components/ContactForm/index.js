@@ -3,20 +3,32 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 // import apikey from "../../keys/apikey";
 
-function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [phone, setPhone] = useState("");
 
+function ContactForm() {
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    message: "",
+    phone: "",
+  });
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const service_id = "service_tvsmfye";
-    const user_id = "user_2DCiRQIylnJKjcFFvztNv";
-    const contact_form_template = "template_2hrx594";
     emailjs
-      .sendForm(service_id, contact_form_template, e.target, user_id)
+      .sendForm(
+        "service_tvsmfye",
+        "template_2hrx594",
+        e.target,
+        "user_2DCiRQIylnJKjcFFvztNv"
+      )
       .then((results) => {
         console.log(results);
         alert("Thank you for your message! We will get back to you soon");
@@ -26,21 +38,8 @@ function ContactForm() {
         alert("Something went wrong, please try again later");
       });
 
-    const messageData = { name, email, message, phone };
+    const messageData = { ...state };
     console.log(messageData);
-  };
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
-  const handlePhoneChange = (e) => {
-    setPhone(e.target.value);
   };
 
   return (
@@ -48,11 +47,11 @@ function ContactForm() {
       <div className="border-t-2 mt-4">
         <p className="font-semibold  mt-2">
           <i className="fas fa-envelope-open-text pr-2"></i>Please send us a
-          message if you have any qustions or email us at test@gmail.com
+          message if you have any qustions or email us at{" "}
+          <a href="mailto:gary@acutobuyers.com">gary@acutobuyers.com</a>
         </p>
       </div>
       <form
-        // action="https://formspree.io/xqgqgwjq"
         method="POST"
         onSubmit={handleSubmit}
       >
@@ -66,9 +65,9 @@ function ContactForm() {
             id="name"
             name="name"
             placeholder="Enter your name"
-            onChange={handleNameChange}
+            onChange={handleChange}
             required
-            value={name}
+            value={state.name}
           />
         </div>
         <div className="form-group">
@@ -80,10 +79,10 @@ function ContactForm() {
             className="form-control"
             id="email"
             name="email"
-            onChange={handleEmailChange}
+            onChange={handleChange}
             placeholder="Enter your email"
             required
-            value={email}
+            value={state.email}
           />
         </div>
         <div className="form-group">
@@ -95,10 +94,10 @@ function ContactForm() {
             className="form-control"
             id="phone"
             name="phone"
-            onChange={handlePhoneChange}
+            onChange={handleChange}
             placeholder="Enter your phone"
             required
-            value={phone}
+            value={state.phone}
           />
         </div>
         <div className="form-group">
@@ -109,18 +108,19 @@ function ContactForm() {
             className="form-control"
             id="message"
             name="message"
-            onChange={handleMessageChange}
+            onChange={handleChange}
             rows="3"
             required
           ></textarea>
         </div>
-
-        <button
-          type="submit"
-          className="bg-blue-600 p-2 font-bold text-white font-serif mt-2 rounded-lg hover:bg-blue-300"
-        >
-          <i className="fas fa-share pr-1"></i> Send
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="bg-blue-600 p-2 text-3xl font-bold text-white font-serif my-2 rounded-lg hover:bg-blue-300 w-3/6"
+          >
+            <i className="fas fa-share pr-1"></i> Send
+          </button>
+        </div>
       </form>
     </div>
   );
