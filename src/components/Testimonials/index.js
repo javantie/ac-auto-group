@@ -12,7 +12,7 @@ const testimony = [
   {
     image: customer_2,
     text: "Very quick and efficient process. The representatives were very courteous and thorough, as was the gentleman who picked up my vehicle.",
-    name: "Elain Spindel",
+    name: "Kelly McDanail",
     id: 2,
   },
   {
