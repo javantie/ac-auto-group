@@ -28,7 +28,7 @@ function Home() {
         </div>
       </div>
       <LeadForm />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </div>
   );
 }

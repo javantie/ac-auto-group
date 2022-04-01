@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
+import MobileMenu from "./components/MobileMenu";
 import How from "./pages/How";
 import About from "./pages/About";
 import ContactPage from "./pages/Contact";
@@ -21,29 +22,11 @@ function App() {
       <div id="container" className="">
         <>
           <Banner />
+
+          {/* <!-- mobile menu bar --> */}
+          <MobileMenu />
+
           <div className=" md:flex">
-            {/* <!-- mobile menu bar --> */}
-            <div className="bg-green-700 text-gray-100 flex justify-between md:hidden">
-             
-              {/* <!-- logo --> */}
-              <Link
-                to="/"
-                className="block p-4 text-yellow-300 font-bold text-xl sm:text-2xl font-serif no-underline"
-              >
-                AC AUTO BUYERS{" "}
-                <i className="fas fa-recycle text-3xl pl-1 text-white animate-spin"></i>
-              </Link>
-
-              {/* <!-- mobile menu button --> */}
-              <button
-                id="mobile-menu"
-                onClick={handleClick}
-                className=" p-4 focus:outline-none focus:bg-green-800"
-              >
-                <i className="fas fa-bars text-3xl"></i>
-              </button>
-            </div>
-
             {/* <!-- sidebar --> */}
             <aside className="sidebar min-h-screen sm:rounded-none rounded-br-lg bg-green-600 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
               {/* <!-- logo --> */}
@@ -88,15 +71,20 @@ function App() {
 
             {/* <!-- content --> */}
             <div className="flex-1 md:p-2 p-3">
-              <Routes>
+              {/* <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-us" element={<About />} />
                 <Route path="/how-it-works" element={<How />} />
                 <Route path="/contact" element={<ContactPage />} />
-              </Routes>
+              </Routes> */}
+
+              <Home />
             </div>
           </div>
 
+          <How />
+          <About />
+          <ContactPage />
           <Footer />
         </>
       </div>

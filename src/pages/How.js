@@ -124,7 +124,7 @@ function How() {
             Cash Auto Salvage answers the most common questions associated with
             selling a car, junk car buying, and auto salvage yards
           </p>
-          {faqs.map((faq) => (
+          {faqs?.map((faq) => (
             <div
               key={faq.id}
               className="border p-2 rounded-md shadow my-2 text-center"
