@@ -1,7 +1,8 @@
 import React from "react";
 import customer_1 from "../../assets/images/getcar-customer-2.jpg";
 import customer_2 from "../../assets/images/getcar-customer-4.jpg";
-import placeholder from "../../assets/images/user-placeholder.png";
+import placeholder from "../../assets/images/junk-car-sale.jpg";
+import customer_4 from "../../assets/images/car-removal.jpg"
 const testimony = [
   {
     image: customer_1,
@@ -18,13 +19,13 @@ const testimony = [
   {
     image: placeholder,
     text: "The tow truck driver handled the paper work, gave us the check (no haggling) and towed the car off my driveway",
-    name: "David Ingram",
+    name: "Elain Spindel",
     id: 3,
   },
   {
-    image: placeholder,
+    image: customer_4,
     text: "I was pleasantly surprised with how smooth and easy the entire process was!! I will keep this company in mind for future needs!!",
-    name: "Elain Spindel",
+    name: "David Ingram",
     id: 4,
   },
 ];
@@ -34,15 +35,15 @@ function Testimonials() {
     <div className=" mt-4">
       {/* //-----------------------------------------Card title-------------------------------------------------------- */}
       <h2 className="text-center font-bold font-serif text-green-600 border-t-2 pt-2 ">
-        Testimonials
+        Customer Reviews & Testimonials
       </h2>
-      <div className="flex flex-col sm:flex-row sm:justify-evenly sm:flex-wrap md:flex-col lg:flex-row lg:flex-nowrap">
+      <div className="flex flex-col sm:flex-row sm:justify-evenly sm:flex-wrap md:flex-col lg:flex-row lg:flex-nowrap ">
         {testimony.map((testiment) => (
           // -----------------------------------------Card Image--------------------------------------------------------
 
           <div
             key={testiment.id}
-            className=" border-2 sm:w-72 md:w-full lg:w-80 rounded-lg p-2 text-center shadow-lg mt-2"
+            className=" border-2 sm:w-72 md:w-full lg:w-80 rounded-lg p-2 text-center shadow-lg mt-2 mx-1"
           >
             <div className="flex justify-center px-5 rounded-tr-lg rounded-lg">
               <img
