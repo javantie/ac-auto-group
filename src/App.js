@@ -45,7 +45,7 @@ function App() {
             </div>
 
             {/* <!-- sidebar --> */}
-            <aside className="sidebar min-h-screen sm:rounded-none rounded-br-lg bg-green-400  space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            <aside className="sidebar min-h-screen sm:rounded md:w-1/6 rounded-br-lg bg-green-400  space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
               {/* <!-- logo --> */}
               <div className="flex justify-center">
                 <img
