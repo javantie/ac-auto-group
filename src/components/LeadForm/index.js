@@ -70,11 +70,11 @@ function LeadForm() {
           Fill out the form below to get a free instant quote.
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center border-2 rounded">
         <form method="POST" onSubmit={handleSubmit} className=" w-5/6">
           <div className="form-group">
             <label htmlFor="name" className="font-bold font-serif text-lg">
-              Name
+              Name:
             </label>
             <input
               type="text"
@@ -89,7 +89,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="email" className="font-bold font-serif text-lg">
-              Email
+              Email:
             </label>
             <input
               type="email"
@@ -104,7 +104,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="phone" className="font-bold font-serif text-lg">
-              Phone
+              Phone:
             </label>
             <input
               type="text"
@@ -119,7 +119,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="year" className="font-bold font-serif text-lg">
-              Year
+              Year:
             </label>
             <input
               type="year"
@@ -134,7 +134,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="make" className="font-bold font-serif text-lg">
-              Make
+              Make:
             </label>
             <input
               type="make"
@@ -149,7 +149,7 @@ function LeadForm() {
           </div>
           <div className="form-group ">
             <label htmlFor="model" className="font-bold font-serif text-lg">
-              Model
+              Model:
             </label>
             <input
               type="model"
@@ -164,7 +164,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="mileage" className="font-bold font-serif text-lg">
-              Mileage
+              Mileage:
             </label>
             <input
               type="mileage"
@@ -179,7 +179,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="zipcode" className="font-bold font-serif text-lg">
-              Zip Code
+              Zip Code:
             </label>
             <input
               type="zipcode"
@@ -194,7 +194,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="state" className="font-bold font-serif text-lg">
-              State
+              State:
             </label>
             <input
               type="state"
@@ -209,7 +209,7 @@ function LeadForm() {
           </div>
           <div className="form-group">
             <label htmlFor="title" className="font-bold font-serif text-lg">
-              Title Status
+              Title Status:
             </label>
             <select
               name="title"
@@ -231,7 +231,7 @@ function LeadForm() {
               htmlFor="mechanical"
               className="font-bold font-serif text-lg"
             >
-              Mechanical Status
+              Mechanical Status:
             </label>
             <select
               name="mechanical"

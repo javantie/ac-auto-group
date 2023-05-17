@@ -15,7 +15,7 @@ function Home() {
         </h1>
         <p className="text-center text-2xl text-yellow-500 font-bold font-serif">
           {" "}
-          Program Gets Your Car Sold FAST!
+          This Program Gets Your Car Sold FAST!
         </p>
         <div className=" flex justify-evenly animate-bounce text-green-500 text-3xl">
           <i className="fas fa-angle-double-down"></i>
