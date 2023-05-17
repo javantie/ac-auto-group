@@ -6,7 +6,7 @@ import OfferButton from "../components/OfferButton";
 
 function Home() {
   return (
-    <div>
+    <div className="">
       <Hero />
       <div className=" border-2 mb-2 rounded-md shadow">
         <h1 className="text-center font-bold text-green-600 font-serif">
