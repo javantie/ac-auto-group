@@ -3,13 +3,16 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className="flex sticky top-0 z-0 sm:relative bg-green-900">
-      <div className=" flex justify-between pr-2 w-4/5 pt-1 pl-1 items-center mr-0.5">
-        <p className="text-xs font-bold text-white sm:text-lg animate-bounce mt-4">We Buy Junk Cars - (518)314-0703!</p>
-        <a href="tel:+15183140703" className="text-xs pl-1 text-white font-bold sm:text-lg no-underline border-2 shadow rounded-md p-1 mr-1 bg-red-600"><i className="fas fa-phone-volume  text-lg"></i>Call Now</a>
+    <div className="flex sticky top-0 z-0 sm:relative w-full">
+      <div className="flex justify-center w-100 items-center text-white font-bold sm:text-lg no-underline border-1 bg-red-500 text-center pt-1">
+        {/* <p className="text-xs font-bold text-white sm:text-lg animate-bounce mt-4">We Buy Junk Cars - (518)314-0703!</p> */}
+        <a href="tel:+15183140703" className="text-white font-serif no-underline">
+          <i className="fas fa-phone-volume text-2xl md:pr-4"></i>CALL US NOW! (518)314-0703</a>
       </div>
-      <div className="flex justify-center items-center pl-2 w-1/5 animate-pulse pr-2 sm:bg-yellow-500">
-        <a href="https://www.peddle.com/offer?pub_id=289876" rel="noreferrer"  target="_blank"className="bg-yellow-500 text-sm text-center sm:text-lg font-bold no-underline font-serif text-white  sm:border-none sm:rounded-none p-1.5 border-2 mr-2 ml-1"><i className="fas fa-money-bill-alt text-lg text-green-900"></i> INSTANT OFFER</a>
+      {/* //-----------------------------------------Instant Offer Button(Custom)-------------------------------------------------------- */}
+      <div className="flex justify-center items-center p-0 w-100 bg-yellow-500">
+        <a href="https://www.peddle.com/offer?pub_id=289876" rel="noreferrer"  target="_blank"className="animate-pulse bg-yellow-500 text-lg text-center sm:text-xl font-bold no-underline font-serif text-white  p-1.5">
+        GET INSTANT OFFER<i className="fas fa-money-bill-alt text-xl pl-2 text-green-900"></i> </a>
       </div>
     </div>
   );

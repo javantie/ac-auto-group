@@ -8,9 +8,9 @@ function About() {
     <>
       <div className="mt-4 font-serif text-lg">
         <div className="mb-2 xl:flex xl:justify-center">
-          <img src={bg_img2} alt="bg_img1" className="shadow rounded-md" />
+          <img src={bg_img2} alt="bg_img1" className="shadow rounded-md " />
         </div>
-        <h1 className="text-yellow-600 font-bold pt-2">What We Buy?</h1>
+        <h1 className="text-yellow-600 font-bold pt-2 text-center underline">What We Buy?</h1>
         <p>
           At AC Auto Buyers, we buy all types of Junk Vehicles including, all
           years, makes and models in any condition. Providing the highest CASH
@@ -25,7 +25,8 @@ function About() {
         <div className="flex justify-center my-2">
           <OfferButton />
         </div>
-        <h2 className="text-yellow-600 font-bold pt-2">Why Choose Us?</h2>
+        <div className="text-center mt-4 border-t">
+        <h2 className="text-yellow-600 font-bold pt-2 underline">Why Choose Us?</h2>
         <ul>
           <li>
             <i className="fas fa-chevron-circle-right pr-2"></i>We offer Guaranteed
@@ -52,18 +53,19 @@ function About() {
             States
           </li>
         </ul>
+        </div>
       </div>
       <div className="flex justify-center">
         <CallButton />
       </div>
 
       <div className="mt-4 font-serif border-t-2">
-        <h2 className="text-center text-green-600 font-bold pt-2">
+        <h2 className="text-green-600 font-bold pt-2"> <i className="fas fa-check pr-4 text-green-300"></i>
           Get Paid for Your Old Vehicle
         </h2>
         <p className="text-lg">
           If you own an older or used vehicle and are looking to sell your car
-          online, you’ve come to the right place. The team at Cash Auto Salvage
+          online, you’ve come to the right place. The team at AC Auto Buyers
           offers cash for cars, regardless of the state of the vehicle.
         </p>
         <p className="text-lg">
@@ -72,7 +74,7 @@ function About() {
           to get started.
         </p>
 
-        <h2 className="text-center text-green-600 font-bold">
+        <h2 className="text-green-600 font-bold"> <i className="fas fa-check pr-4 text-green-300"></i>
           Fast & Reliable Service
         </h2>
         <p className="text-lg">
@@ -82,12 +84,12 @@ function About() {
           hands and puts the cash (or a check) you need in your pocket quickly.
         </p>
         <p className="text-lg">
-          Plus, we are consistent in everything we do. When you work with Cash
-          Auto Salvage you know that you’re getting the best possible service at
+          Plus, we are consistent in everything we do. When you work with AC Auto Buyers
+          you know that you’re getting the best possible service at
           every stage of the sales process. We offer consistent and reliable
           service so you know what to expect at all times.
         </p>
-        <h2 className="text-center text-green-600 font-bold">
+        <h2 className="text-green-600 font-bold"> <i className="fas fa-check pr-4 text-green-300"></i>
           Cash for Any Car
         </h2>
         <p className="text-lg">
@@ -95,7 +97,7 @@ function About() {
           is here to help! We’ve helped hundreds of people easily sell their
           cars online and receive access to funds immediately.
         </p>
-        <p className="text-lg">
+        <p className="text-lg font-bold">
           We’ll help you get any type of car off your hands, including:
         </p>
         <ul className="font-bold text-lg">

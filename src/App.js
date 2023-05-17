@@ -23,7 +23,7 @@ function App() {
           <Banner />
           <div className=" md:flex">
             {/* <!-- mobile menu bar --> */}
-            <div className="bg-green-700 text-gray-100 flex justify-between md:hidden">
+            <div className="bg-green-600 text-gray-100 flex justify-between md:hidden">
              
               {/* <!-- logo --> */}
               <Link
@@ -38,14 +38,14 @@ function App() {
               <button
                 id="mobile-menu"
                 onClick={handleClick}
-                className=" p-4 focus:outline-none focus:bg-green-800"
+                className=" p-4 focus:outline-none focus:bg-green-800 border-l-2"
               >
                 <i className="fas fa-bars text-3xl"></i>
               </button>
             </div>
 
             {/* <!-- sidebar --> */}
-            <aside className="sidebar min-h-screen sm:rounded-none rounded-br-lg bg-green-600 text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            <aside className="sidebar min-h-screen sm:rounded md:w-1/6 rounded-br-lg bg-green-400 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
               {/* <!-- logo --> */}
               <div className="flex justify-center">
                 <img
@@ -56,32 +56,32 @@ function App() {
               </div>
 
               {/* <!-- nav --> */}
-              <nav className="font-bold font-serif text-xl">
+              <nav className="font-bold font-serif text-xl p-1">
                 <Link
                   to="/"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400 "
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400 border-2 text-center"
                 >
-                  Get Offer{" "}
+                  GET QUOTE{" "}
                   <i className="far fa-money-bill-alt pl-5 text-2xl"></i>
                 </Link>
                 <Link
                   to="/about-us"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400 border-2 mt-1 text-center"
                 >
-                  About
+                  About Us
                 </Link>
 
                 <Link
                   to="/contact"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400 border-2 mt-1 text-center"
                 >
-                  Contact
+                  Contact Us
                 </Link>
                 <Link
                   to="/how-it-works"
-                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400"
+                  className="no-underline block text-white py-2.5 px-4 rounded transition duration-200 hover:bg-yellow-400 border-2 mt-1 text-center"
                 >
-                  How it works
+                  How It Works
                 </Link>
               </nav>
             </aside>
