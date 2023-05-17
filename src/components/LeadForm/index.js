@@ -67,10 +67,10 @@ function LeadForm() {
     <div className="my-4 p-2 rounded-lg shadow-lg leadform ">
       <div>
         <p className="font-bold text-center mt-8 text-2xl font-serif text-yellow-500">
-          Fill out the form below to get a free instant quote.
+          Fill out the form below to get a free instant quote!
         </p>
       </div>
-      <div className="flex justify-center border-2 rounded">
+      <div className="flex justify-center border-2 rounded pb-2">
         <form method="POST" onSubmit={handleSubmit} className=" w-5/6">
           <div className="form-group">
             <label htmlFor="name" className="font-bold font-serif text-lg">

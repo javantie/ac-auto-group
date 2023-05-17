@@ -8,7 +8,6 @@ function Home() {
   return (
     <div>
       <Hero />
-
       <div className=" border-2 mb-2 rounded-md shadow">
         <h1 className="text-center font-bold text-green-600 font-serif">
           Get An Instant Online Offer In Less Than 5 minutes!!
