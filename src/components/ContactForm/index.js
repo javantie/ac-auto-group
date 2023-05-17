@@ -54,6 +54,7 @@ function ContactForm() {
       <form
         method="POST"
         onSubmit={handleSubmit}
+        className="border-2 p-2 rounded"
       >
         <div className="form-group">
           <label htmlFor="name" className="font-bold font-serif text-lg">
