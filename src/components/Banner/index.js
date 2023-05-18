@@ -11,7 +11,7 @@ function Banner() {
       </div>
       {/* //-----------------------------------------Instant Offer Button(Custom)-------------------------------------------------------- */}
       <div className="flex justify-center items-center p-0 w-100 bg-yellow-500">
-        <a href="https://www.peddle.com/offer?pub_id=289876" rel="noreferrer"  target="_blank"className="animate-pulse bg-yellow-500 text-lg text-center sm:text-xl font-bold no-underline font-serif text-white  p-1.5">
+        <a href="https://www.peddle.com/offer?pub_id=289876" rel="noreferrer"  target="_blank"className=" instant-offer-link animate-pulse bg-yellow-500 text-lg text-center sm:text-xl font-bold no-underline font-serif text-white  p-1.5">
         GET INSTANT OFFER<i className="fas fa-money-bill-alt text-xl pl-2 text-green-900"></i> </a>
       </div>
     </div>
