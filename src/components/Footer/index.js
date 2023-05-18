@@ -7,13 +7,13 @@ function Footer() {
       <div className="bg-green-800">
         <ul className="flex justify-evenly pr-4">
           <Link to="/" className="text-white font-bold text-lg sm:text-2xl no-underline">
-            <li>Get Offer |</li>
+            <li>Get Offer|</li>
           </Link>
           <Link to="about-us"  className="text-white font-bold text-lg sm:text-2xl no-underline">
-            <li>About Us |</li>
+            <li>About Us|</li>
           </Link>
           <Link to="how-it-works" className="text-white font-bold text-lg sm:text-2xl no-underline">
-            <li>FAQ's |</li>
+            <li>FAQ's|</li>
           </Link>
           <Link to="contact" className="text-white font-bold text-lg sm:text-2xl no-underline">
             <li>Contact US</li>
