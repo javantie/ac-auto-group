@@ -41,6 +41,7 @@ function LeadForm() {
       .then(
         (result) => {
           alert("Thank you for your submission! We will contact you shortly");
+          console.log(result)
         },
         (error) => {
           alert("There was an error submitting your form. Please Try Again");
@@ -62,7 +63,7 @@ function LeadForm() {
       state: "",
     });
   };
-
+// -----------------------------------------------Form Layout-----------------------------------------//
   return (
     <div className="my-4 p-2 rounded-lg shadow-lg leadform ">
       <div>
